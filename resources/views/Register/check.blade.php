@@ -34,12 +34,6 @@
             </div>
           </div>
         </div>
-        @if(session('error'))
-        <div class="text-danger mt-1" style="font-size: 14px;">
-            {{ session('error') }}
-        </div>
-    @endif
-
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Confirm</button>
           </div>

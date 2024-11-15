@@ -13,7 +13,6 @@ Route::get('registerpage',[LoginController::class,'registerpage'])->name('regist
 Route::post('register',[LoginController::class,'register'])->name('register');
 Route::post('logout',[LoginController::class,'logout'])->name('logout');
 Route::post('confirmation',[LoginController::class,'confirmation'])->name('confirmation');
-Route::get('confirmation',[LoginController::class,'confirmation']);
 
 Route::get('post',[PostController::class,'post'])->name('post');
 Route::get('postcreate',[PostController::class,'postcreate'])->name('postcreate');

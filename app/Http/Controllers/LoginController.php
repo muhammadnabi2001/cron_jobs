@@ -80,7 +80,8 @@ class LoginController extends Controller
             $user->save();
             return view('index')->with('success', 'Your verification code is correct!');
         } else {
-            return redirect()->route('confirmation')->with('error', 'Invalid verification code!');
+            return view('Register.check');
+
         }
     }
 }
